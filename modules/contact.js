@@ -349,7 +349,7 @@ ContactFromAB.prototype = {
       if (this._useCardName && card.displayName)
         this._name = card.displayName;
       if (this._useCardName && (card.firstName || card.lastName))
-        this._name = card.firstName + " " + card.lastName;
+        this._name = card.lastName + " " + card.firstName;
       if (!this._name)
         this._name = this._email;
     } else {
